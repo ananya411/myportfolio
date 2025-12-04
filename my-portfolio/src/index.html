@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+  <nav class="bg-gray-900 text-white fixed top-0 left-0 w-full shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold">MyPortfolio</h1>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+          <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden bg-gray-800 md:hidden">
+      <a href="#home" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+      <a href="#about" class="block px-4 py-2 hover:bg-gray-700">About</a>
+      <a href="#projects" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+    </div>
+  </nav>
+
+  <!-- SECTIONS just for testing -->
+  <section id="home" class="h-screen flex items-center justify-center">
+    <h1 class="text-5xl font-bold">Home Section</h1>
+  </section>
+
+  <section id="about" class="h-screen flex items-center justify-center bg-gray-200">
+    <h2 class="text-4xl font-bold">About Section</h2>
+  </section>
+
+  <section id="projects" class="h-screen flex items-center justify-center">
+    <h2 class="text-4xl font-bold">Projects Section</h2>
+  </section>
+
+  <section id="contact" class="h-screen flex items-center justify-center bg-gray-200">
+    <h2 class="text-4xl font-bold">Contact Section</h2>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
